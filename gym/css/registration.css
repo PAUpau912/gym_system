@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: "Acme"; */
+}
+/* body{
+    background: #070F2B;
+    height: 120vh;
+    width: 100%;
+} */
+/* .heading{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    background-color: #eef7ff;
+    box-shadow: 10px 0px 7px black;
+    padding: 10px;
+} */
+form{
+    background-color: rgba(135, 206, 250, 0.795);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin:0 auto; 
+}
+/* FORM */
+.info-container label,.info-container input,
+select{
+    margin: 10px;
+}
+label{
+    font-size: large;
+    font-weight: 400;
+}
+input,select, input[type="number"],
+.address-container input,.address-container select{
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.address-container input,.address-container select{
+    padding: 5px;
+}
+input[type="submit"]{
+    height: 40px;
+    width: 150px;
+    padding: 4px 10px;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        background: rgb(255, 255, 255);
+        margin: 10px auto;
+            font-size: large;
+                font-weight: 500;
+                    display: block;
+                    box-shadow:-1px -1px 1px rgba(0, 172, 238, 1),
+                        2px 2px 1px rgba(135, 206, 250, 0.5);
+}
+::placeholder{
+    font-family: "Acme";
+}
+input[type ="submit"]:hover{
+    background-color: rgb(33, 136, 56);
+        color: rgb(255, 255, 255);
+        animation: button-click 0.4s ease;
+        box-shadow: 2px 2px 2px rgba(0, 172, 238, 1), -2px -2px 2px rgba(135, 206, 250, 0.5);
+}@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 95%; /* Adjusted width for smaller screens */
+    }
+
+    input[type="submit"] {
+        margin: 10px auto; /* Centered submit button */
+    }
+}
+
+@media (max-width: 480px) {
+    input,
+    select,
+    input[type="number"],
+    input[type="submit"] {
+        padding: 8px 16px; /* Adjusted padding for smaller inputs */
+        font-size: medium; /* Adjusted font size for smaller screens */
+    }
+}
+
+input{
+    border: none;
+}
+.regtt{
+    text-align: center;
+    background-color: rgb(232, 232, 232) ;
+    padding: 25px;
+    box-shadow: 10px 0px 7px rgb(0, 0, 0);
+}
+#watermark p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: rgb(223, 221, 221);
+    opacity: 0.1;
+    background-color: none;
+}

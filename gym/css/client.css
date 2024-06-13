@@ -1,0 +1,103 @@
+body{
+    background-color: rgba(90, 178, 255, 0.822);
+}
+.logout {
+    transition: transform 0.2s;
+    color: rgb(94, 94, 94);
+}
+
+.logout:hover {
+    color: red;
+    animation: pop 0.2s forwards;
+}
+
+.profile-info button {
+    transition: transform 0.2s;
+}
+
+.profile-info button:hover {
+    animation: pop 0.2s forwards;
+}
+
+.recatt {
+    animation: button-click 0.4s ease;
+    box-shadow: -1px -1px 1px rgba(0, 172, 238, 1), 2px 2px 1px rgb(0, 33, 66);
+}
+
+.recatt:hover {
+    animation: button-click 0.4s ease;
+    box-shadow: 2px 2px 2px rgba(0, 172, 238, 1), -2px -2px 2px rgb(0, 33, 66);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+                .profile-image {
+                    width: 150px;
+                    height: 150px;
+                }
+        
+                .profile-pic {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+/* .profile-image{
+    padding-left: 20px;
+} */
+.flex2{
+    display: flex;
+}
+
+.bgprof{
+    background-color: rgba(241, 241, 241, 0.865);
+    border-radius: 20px;
+}
+/* .bgprof2{
+    background-color: rgba(241, 241, 241, 0.865);
+    border-radius: 10px;  
+    width: 100%;
+} */
+
+.payment-info{
+background-color: rgba(241, 241, 241, 0.865);
+border-radius: 10px;
+}
+
+.update a{
+    text-decoration: none;
+}
+#watermark p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: rgb(223, 221, 221);
+    opacity: 0.1;
+    background-color: none;
+}

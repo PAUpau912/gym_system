@@ -1,0 +1,302 @@
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.877);
+    color: rgb(7, 15, 43);
+    font-family: "Freeman", sans-serif;
+    margin: 0;
+}
+
+.navbar img {
+    margin: 0 5px;
+}
+.navbar .navbar-brand {
+    font-size: x-large;
+}
+
+.nav-item {
+    font-size: 1em;
+}
+
+.navbar-toggler {
+    background-color: rgb(7, 15, 43);
+}
+
+.navbar-custom {
+    background: rgba(90, 178, 255, 0.7);
+    /* Light Blue with transparency */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: rgb(7, 15, 43);
+    font-weight: 900;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgb(255, 255, 255);
+    animation: button-click 0.4s ease;
+    text-transform: uppercase;
+}
+
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.first-container {
+    background-image: url('background/firstpage.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.bgbgbg{
+    background-color: rgba(90, 178, 255, 0.7);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 100%;
+}
+.first-container h1 {
+    color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgba(96, 95, 95, 0.879);
+        font-size: 4rem;
+
+}
+.mt-4 {
+    color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 2px rgb(100, 100, 100); */
+}
+.first-container h3 {
+    color: rgb(255, 255, 255);
+        /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.879); */
+}
+
+.first-container .btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgb(255, 165, 0);
+    /* Orange */
+    font-size: larger;
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.first-container .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    animation: button-click 0.4s ease;
+}
+
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#About {
+    padding: 10px 0;
+}
+
+#About h1 {
+    font-size: 2.5rem;
+}
+
+#Membership {
+    padding: 50px 0;
+    background-color: #07274b;
+    background-color: rgb(200, 229, 255);
+    border-radius: 20px;
+}
+
+#Membership h2 {
+    font-size: 2.5rem;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    align-items: last baseline;
+}
+
+.carousel-item h2 {
+    margin-top: 20px;
+    font-size: large;
+}
+
+.carousel-item .detail {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 0 0 0 50px;
+}
+
+.detail {
+    font-size: medium;
+}
+
+.carobt img {
+    width: clamp(50px, 20vw, 100px);
+    /* Responsive width between 50px and 100px, based on viewport width */
+    height: clamp(50px, 20vw, 100px);
+    /* Responsive height between 50px and 100px, based on viewport width */
+}
+
+@media (min-width: 768px) {
+    .flex {
+        display: flex;
+    }
+    .carousel-item .text-center {
+        margin-left: 20px;
+        /* Adjust the spacing between image and text */
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-item .text-center {
+        margin-top: 20px;
+        /* Adjust the spacing between image and text */
+    }
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 40px;
+    }
+}
+
+/* @media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+} */
+
+#Trainer {
+    padding: 10px 0;
+}
+
+#Trainer h1 {
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+#Trainer .trainer-container{
+    width: 100px;
+    border-radius: 10px;
+}
+#Trainer img{
+    width: 90%;
+    height: auto;
+}
+
+#Gallery {
+    padding: 15px 10px;
+    background-color: rgb(238, 247, 255);
+}
+
+#Gallery h2 {
+    font-size: 2.5rem;
+    color: rgb(7, 15, 43);
+}
+
+#Gallery img {
+    width: 90%;
+    /* height: 90%; */
+    border-radius: 10px;
+}
+
+#Contact {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: rgb(238, 247, 255);
+    padding: 50px 0;
+    color: rgb(7, 15, 43);
+}
+
+footer h4,
+footer p {
+    color: rgb(7, 15, 43);
+    /* Dark Blue */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: rgb(90, 178, 255);
+    /* Light Blue */
+    font-size: 1.5rem;
+}
+
+.newsletter-input {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.line{
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 0;
+}
+
+#watermark p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: rgb(223, 221, 221);
+    opacity: 0.1;
+}

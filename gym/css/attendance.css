@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Acme";
+}
+body {
+    background-color: rgba(90, 178, 255, 0.822) !important;
+}
+.heading{
+    justify-content: stretch;
+background-color: rgb(255, 255, 255);
+    box-shadow: 10px 0px 7px black;
+    padding: 10px;
+}
+form{
+background-color: rgba(241, 241, 241, 0.865);
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin: 20px auto;
+    border: 2px solid rgb(129, 129, 129);
+    display: grid;
+    place-content: center;
+    border-radius: 20px;
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    background-color: rgb(255, 0, 0);
+    padding: 10px 35px;
+    color: #eef7ff;
+    font-size: large;
+    font-weight: 500;
+    border:none;
+}
+::placeholder{
+    font-family: "Acme";
+}
+input[type ="submit"]:hover{
+    box-shadow: 5px 5px 10px white;
+    background-color: rgb(125, 0, 0);
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form {
+        margin: 20px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 20px;
+    }
+    
+    form {
+        padding: 15px;
+        margin: 15px;
+    }
+    
+    input, select {
+        padding: 8px;
+    }
+    
+    input[type="submit"] {
+        padding: 8px 25px;
+        font-size: medium;
+    }
+}
+#watermark p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: rgb(223, 221, 221);
+    opacity: 0.1;
+    background-color: none;
+}
