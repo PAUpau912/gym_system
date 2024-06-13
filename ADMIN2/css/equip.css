@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: linear-gradient(to right, rgb(226, 226, 226), rgb(201, 214, 255));
+}
+
+/* img {
+    width: 70px;
+} */
+
+/* .head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #eef7ff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.head-container a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+} */
+
+.form_container {
+    border-radius: 20px;
+    background: rgba(90, 178, 255, 0.822);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px; 
+    padding: 15px 0px;
+}
+
+form {
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+label {
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+/* input[type="text"],
+select {
+    padding: 9px 15px;
+    border-radius: 5px;
+    background-color: none;
+} */
+/* 
+input[type='text'],
+input[type='text']:focus,
+::placeholder,
+select {
+    outline: none;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: #7AB2B2;
+} */
+
+/* input[type='submit'] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50%; 
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    font-size: large;
+    font-family: "Poetsen One";
+    font-weight: 800;
+    border-radius: 7px;
+    color: white;
+    background-color: red;
+    border: none;
+} */
+
+/* Media Query for Responsive Design */
+/* @media screen and (max-width: 768px) {
+    .head-container {
+        padding: 8px 15px;
+    }
+
+    .head-container a {
+        font-size: medium;
+    }
+
+    .form_container {
+        width: 90%;
+        max-width: 500px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    form {
+        padding-top: 10px;
+    }
+
+    input[type='submit'] {
+        margin-top: 20px;
+        font-size: medium;
+    }
+} */
+.sidebar {
+    height: 100vh;
+    width: 180px;
+    background-color: rgba(90, 178, 255, 0.822);
+    padding: 10px 0 0 10px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* CSS for the links on hover */
+.sidebar a:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/* CSS for the main content */
+
+/* CSS for the sub-menu */
+.sub-menu {
+    color: rgb(0, 0, 0);
+    display: none;
+    background-color: rgb(226, 226, 226);
+}
+
+/* CSS for the sub-menu links */
+.sub-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: rgba(90, 178, 255, 0.822);
+}
+
+.content {
+    flex: 1;
+    background-color: rgb(201, 214, 255);
+    margin: 5px 6px;
+    border-radius: 20px;
+}
+#wtr p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: white;
+    opacity: 0.2;
+    background-color: none;
+}

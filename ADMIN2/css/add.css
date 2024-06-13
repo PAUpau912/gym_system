@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poetsen One",sans-serif;
+}
+body{
+    margin-bottom: 200px;
+}
+/*HEADING TANGINA*/
+.heading{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 5px solid goldenrod;
+}
+.heading, a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+img{
+    width: 80px;
+}
+.title{
+    font-size: xx-large;
+}
+/*FORM FVCK*/
+.content{
+    width: 700px;
+    height: 650px;
+    display: grid;
+    place-content: center;
+}
+form{
+    border-radius: 10px;
+    width: 700px;
+    height:800px;
+    margin:auto;
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+
+    box-shadow: 5px 5px 10px goldenrod;
+    background-color: rgb(218, 165, 32);
+}
+h2{
+    margin: 10px 0px;
+    display: grid;
+    place-content: center;
+}
+input[type="text"],
+input[type="tel"],
+input[type = "date"],
+input[type ="number"],
+select{
+    margin-top: 6px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+input[type ="submit"]{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 200px;
+    padding: 10px 3px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 6px;
+
+    border: none;
+    cursor: pointer;
+}
+input[type ="submit"]:hover{
+    background-color: rgba(255, 0, 0, 0.553);
+}

@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: linear-gradient(to right, rgb(226, 226, 226), rgb(201, 214, 255));
+}
+
+/* MEMBER INFO */
+.CONT {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid white;
+    display: grid;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgba(90, 178, 255, 0.822);
+    box-shadow: 5px 5px 10px grey;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 400;
+}
+
+label {
+    font-weight: 500;
+    color: black;
+}
+
+.info {
+    width: 100%;
+    /* Adjust width */
+    padding-left: 15px;
+    /* Adjust padding */
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 155px;
+    /* Adjust maximum width */
+    height: auto;
+    /* Keep aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 5px 5px 5px #ddd;
+    margin: 0 auto 10px;
+    /* Center horizontally */
+}
+
+.profile-container {
+    text-align: center;
+    /* Center text */
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Align buttons evenly */
+    margin-top: 10px;
+}
+
+.ID,
+.delete {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ID {
+    background-color: #507faf;
+    color: white;
+}
+
+.delete {
+    color: white;
+    background-color: #EE4E4E;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .CONT {
+        grid-template-columns: auto;
+        /* Switch to single column */
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .profile-image {
+        max-width: 120px;
+        /* Adjust maximum width */
+    }
+}
+
+.sidebar {
+    height: 100vh;
+    width: 180px;
+    background-color: rgba(90, 178, 255, 0.822);
+    padding: 10px 0 0 10px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* CSS for the links on hover */
+.sidebar a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* CSS for the main content */
+
+/* CSS for the sub-menu */
+.sub-menu {
+    color: rgb(0, 0, 0);
+    display: none;
+    background-color: rgb(226, 226, 226);
+}
+
+/* CSS for the sub-menu links */
+.sub-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: rgba(90, 178, 255, 0.822);
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    margin: 5px 6px;
+    border-radius: 20px;
+}
+.logo img{
+    width: 50px;
+    margin-left: 50px;
+}
+.logo h6{
+    margin-left: 30px;
+}
+#wtr p{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: white;
+    opacity: 0.2;
+    background-color: none;
+}
